@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<settings>
+	<authkey></authkey>
+	<config>
+		<translate_fields>content, title, menu, meta, metad</translate_fields>
+		<omit_translate>"Born to be wild", Steppenwolf</omit_translate>
+		<omit_placeholders>Y</omit_placeholders>
+		<suggest_counter>Y</suggest_counter>
+	</config>
+	<deepl>
+		<tag_handling>xml</tag_handling>
+		<ignore_tags>code, pre, kbd, cite, notr</ignore_tags>
+		<split_sentences>nonewlines</split_sentences>
+		<outline_detection></outline_detection>
+		<splitting_tags></splitting_tags>
+		<non_splitting_tags>b, strong, i, em</non_splitting_tags>
+		<preserve_formatting></preserve_formatting>
+		<formality></formality>
+		<context></context>
+	</deepl>
+	<languages>
+	</languages>
+</settings>
