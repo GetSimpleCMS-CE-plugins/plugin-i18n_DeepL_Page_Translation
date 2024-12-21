@@ -86,6 +86,7 @@ public static function error_description($err) {
 		414 => 'DEEPL_ERR_414',
 		429 => 'DEEPL_ERR_429',
 		456 => 'DEEPL_ERR_456',
+		500 => 'DEEPL_ERR_500',
 		503 => 'DEEPL_ERR_503',
 		529 => 'DEEPL_ERR_529'
 	];
