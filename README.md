@@ -1,22 +1,23 @@
 This plugin allows translation of GetSimple cms pages using the DeepL translation API. \
-**It requires the [i18n plugin](https://github.com/GetSimpleCMS-CE-plugins/plugin-i18n/) designed by Martin Vlcek.**
+It requires the [i18n base plugin](https://github.com/GetSimpleCMS-CE-plugins/plugin-i18n/) designed by Martin Vlcek.
 
 This plugin creates new, translated pages on the Edit page, according to the i18n page structure that uses a slug ending consisting of an underscore plus the two-letter language code for non-default language pages.
 
-**Attention:** A (Free or Pro) DeepL Developer API account is required: See here.
+**Attention:** A (Free or Pro) DeepL Developer API account is also required: See [here](https://www.deepl.com/en/pro-api#api-pricing).
 
 ## Features
-Choose
-* which fields you want to have translated,
+These are some of the configuration options:
+* Choose which fields you want to have translated,
 * which html/xml tags will contain text not to translate,
 * and which expressions and words shall never be translated
-* exclude placeholders {% xxx%}, (% xxx%), %xxx% from translation
-* configure a list of target languages used, and their respective slug extensions (source language is always auto-detected). \
+* exclude placeholders {% xxx%}, (% xxx%), %xxx% from translation.
+* Configure a list of target languages used, and their respective slug extensions (source language is always auto-detected). \
 When new languages will be added by DeepL, simply open the plugin configuration page once and the additional language will become available.
+* Give DeepL some context hints for improved translation results
 
 ## Supported Languages
 This plugin works with all languages provided by DeepL. \
-Currently (Dec. 21, 2024) they say they support about 30 languages. See also hee: https://developers.deepl.com/docs/resources/supported-languages
+Currently (Dec. 21, 2024) they say they support about 30 languages. See also here: [Supported Languages](https://developers.deepl.com/docs/resources/supported-languages)
 
 ## Installation
 Unzip the zip file and upload the contents to the plugin directory.
@@ -42,9 +43,9 @@ A new machine-translated page will be created and saved, with all desired fields
 Review and improve the translated content and all fields carefully and save again.
 
 ## Improving the translation
-Because DeepL uses the text context for better translation, you can use an additional "context" field for giving DeepL more information what the text to translate is about. If used, it should contain a few sentences in source (default) language.
-So if your web site is about "tables", you drop some text about Excel, tables, rows, columns, nad spreadsheets there. 
-Or you write about furniture, chairs and sideboards if DeepL shall translate in that context.
+Because DeepL uses the text context for better translation, you can use an additional "context" field for giving DeepL more information what the text to translate is about. If used, it should contain a few sentences in source (default) language. \
+So if your web site is about data "tables", you drop some text about Excel, tables, rows, columns, and spreadsheets there. 
+Or you write about furniture, chairs and sideboards if DeepL shall translate "table" in that context.
 
 ## Disclaimer
 This plugin is unofficial and is not provided by DeepL, and there are no relations or dependencies to DeepL.
