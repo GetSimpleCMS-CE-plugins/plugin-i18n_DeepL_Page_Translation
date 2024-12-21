@@ -1,7 +1,9 @@
+## General
 This plugin allows translation of GetSimple cms pages using the DeepL translation API. \
 It requires the [i18n base plugin](https://github.com/GetSimpleCMS-CE-plugins/plugin-i18n/) designed by Martin Vlcek.
 
-This plugin creates new, translated pages on the Edit page, according to the i18n page structure that uses a slug ending consisting of an underscore plus the two-letter language code for non-default language pages.
+This plugin creates new, translated pages on the Edit page, according to the i18n page structure that uses a slug ending consisting of an underscore plus the two-letter language code for non-default language pages. \
+It does this by cloning pages to a different language slug, while translating their content using DeepL.
 
 **Attention:** A (Free or Pro) DeepL Developer API account is also required: See [here](https://www.deepl.com/en/pro-api#api-pricing).
 
@@ -17,7 +19,7 @@ When new languages will be added by DeepL, simply open the plugin configuration 
 
 ## Supported Languages
 This plugin works with all languages provided by DeepL. \
-Currently (Dec. 21, 2024) they say they support about 30 languages. See also here: [Supported Languages](https://developers.deepl.com/docs/resources/supported-languages)
+Currently (December 2024) DeepL says they support about 30 languages. See also here: [Supported Languages](https://developers.deepl.com/docs/resources/supported-languages)
 
 ## Installation
 Unzip the zip file and upload the contents to the plugin directory.
