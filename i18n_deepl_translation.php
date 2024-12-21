@@ -2,7 +2,7 @@
 /*
 Plugin Name: i18n DeepL Page Translation
 Description: Clones pages to a different language slug, while translating their content using DeepL
-Version: 1.0.5
+Version: 1.0.6
 */
  
 # get correct id for plugin
@@ -17,10 +17,10 @@ i18n_merge($plugin_id) || i18n_merge($plugin_id,'en_US');
 register_plugin(
 	$plugin_id, //Plugin id
 	'i18n DeepL Page Translation', 	     //Plugin name
-	'1.0.5', 		                     //Plugin version
+	'1.0.6', 		                     //Plugin version
 	'Astrid Hanssen',                    //Plugin author
 	'https://astrid-hanssen.de/',         //author website
-	'Translates page content and other fields using the DeepL API', //Plugin description
+	'Machine-translate page content and other fields using the DeepL API', //Plugin description
 	'plugins',                            //pages type - on which admin tab to display
 	'i18n_deepl_translation_do_dispatch'  //main function (administration)
 );
