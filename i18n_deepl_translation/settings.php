@@ -188,6 +188,10 @@ $xml = getXML($datasettingspath);
 	&nbsp;&nbsp;<label for="formality_less" style="display:inline;"><?php ti18n('CONFIG_FORMALITY_LESS'); ?></label>&nbsp;<input type="radio" name="formality" id="formality_less" value="less"<?php if(''.$xml->deepl->formality.'' === 'less') echo " checked";?>>
 	</td>
 </tr>
+<tr>
+    <td><label for="context"><?php ti18n('CONFIG_CONTEXT'); ?></label></td>
+    <td><textarea name="context" id="context" rows="4" cols="40" style="height:5em;width:40em;padding:2px;"><?php echo $xml->deepl->context;?></textarea></td>
+</tr>
 </table>
 
 <p></p><h3 class="deepl_extended"><?php ti18n('CONFIG_EXTENDED');?></h3>
@@ -222,10 +226,6 @@ $xml = getXML($datasettingspath);
 <tr>
     <td><label for="non_splitting_tags"><?php ti18n('CONFIG_NON_SPLITTING_TAGS'); ?></label></td>
     <td><textarea name="non_splitting_tags" id="non_splitting_tags" rows="3" cols="40" style="height:4em;width:40em;padding:2px;"><?php echo $xml->deepl->non_splitting_tags;?></textarea></td>
-</tr>
-<tr>
-    <td><label for="context"><?php ti18n('CONFIG_CONTEXT'); ?></label></td>
-    <td><textarea name="context" id="context" rows="4" cols="40" style="height:5em;width:40em;padding:2px;"><?php echo $xml->deepl->context;?></textarea></td>
 </tr>
 </table>
 <p></p><h3><?php ti18n('CONFIG_LANGUAGES');?></h3>
