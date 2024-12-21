@@ -27,7 +27,7 @@ Then go to the Plugins Page and choose "Configure DeepL Translation" from the si
 At first, you will have to enter the DeepL authenthication key you got with your DeepL API account and click "Save Settings".
 
 After this, you will see all available languages, and you can configure all translation parameters according to your needs.
-You should pay special attention to the slug configuration, as these shall reflect your multilanguage website slug structure.
+You should pay special attention to the slug configuration, as these shall reflect your multilanguage website slug structure. Make sure that for the default language the slug extension field is empty.
 
 After saving again, the plugin is ready for use.
 
